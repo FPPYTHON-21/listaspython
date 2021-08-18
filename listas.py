@@ -15,7 +15,7 @@ myList=[1,"Hola", 3.4]
 print(myList)
 
 myListComposite=["mouse",[8,4,6],(1,2)]
-print(myList)
+print(myListComposite)
 
 print("Presiona ENTER para continuar ....")
 input()
@@ -31,7 +31,7 @@ myListC=['Happy',[2,0,1,5]]
 print(myList[0])      #p
 print(myList[2])      #o
 print(myListC[0])     #'Happy'
-print(myListC[1][3])  #b
+print(myListC[1][3])  #5
 print(myListC[-2])     #'Happy'
 
 print("Presiona ENTER para continuar ....")
@@ -45,7 +45,7 @@ print("------------------")
 myList=['R','a','f','a','e','l']
 print(myList[1:4])       #[‘a’,’f’,’a’]
 print(myList[:-2])       #[‘R’,’a’,’f’,’a’]
-print(myList[3:])        #[‘a’,’r’,’d’,’o’]
+print(myList[3:])        #[‘a’,’e’,’l’]
 
 print("Presiona ENTER para continuar ....")
 input()
@@ -55,7 +55,7 @@ print('CAMBIOS EN LISTAS')
 print('-----------------')
 
 pares=[0,2,4,6,8]
-print(pares)
+print(pares)       # [0,2,4,6,8] 
 
 pares[0]=1         # [1,2,4,6,8] 
 print(pares)
@@ -72,7 +72,7 @@ print('AGREGANDO EN LISTAS')
 print('-------------------')
 
 impares=[1,3,5]
-print(impares)
+print(impares)             # [1,3,5]
 
 impares.append(7)          # [1,3,5,7]
 print(impares)
@@ -104,7 +104,7 @@ print('INSERCION EN LISTAS')
 print('-------------------')
 
 impares=[1,9]
-print(impares)
+print(impares)      # [1,9]
 
 impares.insert(1,3) # [1,3,9]
 print(impares)
@@ -118,7 +118,7 @@ print('REMOVER POR POSICION')
 print('--------------------')
 
 pares=[0,2,4,6,8]
-print(pares)
+print(pares)        # [0,2,4,6,8]
 
 del pares[2]        # [0,2,6,8]
 print(pares)
@@ -138,7 +138,7 @@ print('REMOVER POR ELEMENTO')
 print('--------------------')
 
 myList=['c','a','r','l','o','s']
-print(myList)
+print(myList)       # ['c','a','r','l','o','s']
 
 myList.remove('c') # [’a’,’r’,’l’,’o’,’s’]
 print(myList)
@@ -161,7 +161,7 @@ print('INDICE DE UN ELEMENTO')
 print('---------------------')
 
 myList=[3,8,1,6,0,8,4]
-print(myList)
+print(myList)             # [3,8,1,6,0,8,4]
 
 print(myList.index(8))    # 1
 
@@ -174,9 +174,9 @@ print('CONTEO EN LISTAS')
 print('----------------')
 
 myList=[3,8,1,6,0,8,4]
-print(myList)
+print(myList)           # [3,8,1,6,0,8,4]
 
-print(myList.count(8))
+print(myList.count(8))  # 2
 
 print("Presiona ENTER para continuar ....")
 input()
@@ -186,10 +186,10 @@ print('ORDERNAR LISTAS')
 print('---------------')
 
 myList=[3,8,1,6,0,8,4]
-print(myList)
+print(myList)           # [3,8,1,6,0,8,4]
 
 myList.sort()
-print(myList)
+print(myList)           # [0,1,3,4,6,8,8]
 
 print("Presiona ENTER para continuar ....")
 input()
@@ -200,10 +200,10 @@ print('REVERSA DE UNA LISTA')
 print('--------------------')
 
 myList=[7,2,3,5]
-print(myList)
+print(myList)       # [7,2,3,5]
 
-myList.reverse()   # [5,3,2,7]
-print(myList)
+myList.reverse()   
+print(myList)       # [5,3,2,7]
 
 print("Presiona ENTER para continuar ....")
 input()
@@ -214,10 +214,10 @@ print('LIST COMPREHENSION')
 print('------------------')
 
 pot2 = [2 ** x for x in [1,3,5]]
-print(pot2)   # [1,9,25]
+print(pot2)   # [2,8,32]
 
 pot2excepto3 = [2 ** x for x in [1,3,5] if x != 3]
-print(pot2excepto3)   # [1,25]
+print(pot2excepto3)   # [2,32]
 
 print("Presiona ENTER para continuar ....")
 input()
@@ -228,7 +228,7 @@ print('MEMBRESIA EN LISTAS')
 print('-------------------')
 
 myList=[2,4,6,8,9]
-print(myList)
+print(myList)       # [2,4,6,8,9]
 
 print(2 in myList)  #True
 print(1 in myList)  #False
@@ -242,7 +242,7 @@ print('LONGITUD/MAX/MIN/SUMA')
 print('---------------------')
 
 myList=[2,4,6,8,9]
-print(myList)
+print(myList)       #[2,4,6,8,9]
 
 print(len(myList))   #5
 print(max(myList))   #9
